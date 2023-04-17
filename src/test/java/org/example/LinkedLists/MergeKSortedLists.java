@@ -1,4 +1,4 @@
-package org.example.TwoPointers;
+package org.example.LinkedLists;
 
 public class MergeKSortedLists {
 
@@ -21,7 +21,6 @@ public class MergeKSortedLists {
         return head.next;
 
     }
-    public ListNode mergeKLists(ListNode[] lists) {
         public ListNode mergeKLists(ListNode[] lists) {
             int interval = 1;
             int nodes = lists.length;

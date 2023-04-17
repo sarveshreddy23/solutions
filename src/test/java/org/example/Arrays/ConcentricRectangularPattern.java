@@ -1,7 +1,6 @@
 package org.example.Arrays;
 
 public class ConcentricRectangularPattern {
-
     public static int[][] prettyPrint(int A) {
         int arrLen = A*2-1;
         int[][] result = new int[arrLen][arrLen];

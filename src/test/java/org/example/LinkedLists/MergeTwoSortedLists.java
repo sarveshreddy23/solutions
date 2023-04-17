@@ -1,4 +1,8 @@
-package org.example.TwoPointers;
+package org.example.LinkedLists;
+
+import org.junit.Test;
+
+import java.util.ArrayList;
 
 public class MergeTwoSortedLists {
 
@@ -33,5 +37,41 @@ public class MergeTwoSortedLists {
             list2 = list2.next;
         }
 
+    }
+
+
+
+    public void merge(ArrayList<Integer> a, ArrayList<Integer> b) {
+        int i =0;
+        int j =0;
+        int m = a.size();
+        int n = b.size();
+        while(j<n){
+            if(i<m && a.get(i)<b.get(j)) i++;
+
+            else if(i<m){
+                a.add(i, b.get(j++));
+                m++;
+                i++;
+            }
+            else {
+                a.add(b.get(j++));
+            }
+        }
+    }
+
+
+    @Test
+    public void runTest(){
+        ArrayList<Integer> a = new ArrayList<Integer>();
+        ArrayList<Integer> b = new ArrayList<Integer>();
+
+        a.add(3);
+        b.add(-4);
+        b.add(-3);
+//        b.add(2);
+
+        merge(a, b);
+        a.forEach(System.out::println);
     }
 }

@@ -1,4 +1,4 @@
-package org.example.TwoPointers;
+package org.example.LinkedLists;
 
 public class ListNode {
          int val;
