@@ -17,5 +17,3 @@ public class PairWithGivenDifference {
     }
 }
 
-17
-        2   3   5      

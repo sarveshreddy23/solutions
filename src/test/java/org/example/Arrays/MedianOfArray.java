@@ -40,7 +40,7 @@ public class MedianOfArray {
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length;
-        int n = nums2.length
+        int n = nums2.length;
 
         if(n < m) return findMedianSortedArrays(nums2, nums1);
         int realMidInMergedArray = (m+n+1)/2;
